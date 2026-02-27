@@ -1,0 +1,37 @@
+{
+  "kind": "build_request",
+  "title": "Fix FSSAI spelling in top header/hero line",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Find and correct any misspelling of 'FSSAI' in the topmost visible line of the page — this includes the Header component, HeroSection component, and any marquee/banner text — ensuring it reads exactly 'FSSAI' everywhere in that area.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "there is a spelling mistake in the top line. FSSAI SPELLING"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The topmost line visible on page load (Header/HeroSection) contains no misspelling of FSSAI (e.g., no 'FASSAI', 'FSAAI', 'FSSAI ' with extra spaces, or similar typos).",
+        "The corrected text reads exactly 'FSSAI' in all occurrences within the header/hero area.",
+        "No other text on the page is inadvertently changed."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify files under frontend/src/hooks/ or frontend/src/components/ui (immutable paths).",
+    "Only fix the spelling — do not alter layout, styling, or other content."
+  ],
+  "nonGoals": [
+    "Changing FSSAI references elsewhere on the page (ServicesSection, ContactSection, Footer) unless they are also misspelled.",
+    "Any new feature additions or design changes."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

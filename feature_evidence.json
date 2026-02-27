@@ -1,0 +1,23 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-find-and-correct-any-misspelling-of-fssai-in-the-topmost-visible-line-of-the-page-this-includes-the-header-component-herosection-component-and-any-marquee-banner-text-ensuring-it-reads-exactly-fssai-everywhere-in-that-area",
+      "featureTitle": "Find and correct any misspelling of 'FSSAI' in the topmost visible line of the page — this includes the Header component, HeroSection component, and any marquee/banner text — ensuring it reads exactly 'FSSAI' everywhere in that area.",
+      "files": [
+        "frontend/src/components/HeroSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

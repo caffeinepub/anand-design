@@ -1,0 +1,33 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Fix FSSAI spelling in top header/hero line",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Correct any misspelling of 'FSSAI' in the topmost visible line of the page (Header component, HeroSection component, and any marquee/banner text)",
+      "acceptanceCriteria": [
+        "The topmost line visible on page load (Header/HeroSection) contains no misspelling of FSSAI (e.g., no 'FASSAI', 'FSAAI', 'FSSAI ' with extra spaces, or similar typos).",
+        "The corrected text reads exactly 'FSSAI' in all occurrences within the header/hero area.",
+        "No other text on the page is inadvertently changed."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Header.tsx",
+          "operation": "modify",
+          "description": "Review all text content in the Header component and correct any misspelling of 'FSSAI' to read exactly 'FSSAI'. Check navigation links, badges, and any visible text elements."
+        },
+        {
+          "path": "frontend/src/components/HeroSection.tsx",
+          "operation": "modify",
+          "description": "Review the headline, tagline, and all text content in the HeroSection component and correct any misspelling of 'FSSAI' to read exactly 'FSSAI'. Ensure no extra spaces or typos in FSSAI references."
+        },
+        {
+          "path": "frontend/src/components/LatestNotifications.tsx",
+          "operation": "modify",
+          "description": "Review the marquee banner text and notification card content for any misspelling of 'FSSAI' and correct to read exactly 'FSSAI'. Focus on the topmost marquee banner that appears above the hero section."
+        }
+      ]
+    }
+  ]
+}

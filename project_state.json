@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "New project",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": true,
+  "existing_features": [
+    {
+      "id": "feature-find-and-correct-any-misspelling-of-fssai-in-the-topmost-visible-line-of-the-page-this-includes-the-header-component-herosection-component-and-any-marquee-banner-text-ensuring-it-reads-exactly-fssai-everywhere-in-that-area",
+      "title": "Find and correct any misspelling of 'FSSAI' in the topmost visible line of the page — this includes the Header component, HeroSection component, and any marquee/banner text — ensuring it reads exactly 'FSSAI' everywhere in that area.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [],
+  "projectName": "Fix FSSAI spelling in top header/hero line",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

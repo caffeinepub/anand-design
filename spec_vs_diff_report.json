@@ -1,0 +1,24 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-27T11:47:13.260Z",
+  "summary": "The diff modifies HeroSection.tsx to correct FSSAI spelling in the hero area services list. The file summary confirms 'corrected FSSAI spelling in the services list' for HeroSection. However, the Header component is not shown as modified in the diff with actual content, so it is unclear whether any FSSAI misspelling in the Header was also corrected. The file-summaries.txt mentions Header.tsx changes but does not reference FSSAI spelling correction there.",
+  "missing_requirements": [
+    {
+      "id": "REQ-1",
+      "requirement": "Find and correct any misspelling of 'FSSAI' in the Header component (topmost visible line area)",
+      "reason": "The diff only shows HeroSection.tsx modified with visible content. Header.tsx is not among the files with shown diff content. The file-summaries.txt describes Header.tsx changes (subtitle, working hours) but does not mention FSSAI spelling correction there. If Header.tsx contained a misspelling it may not have been corrected.",
+      "evidence": [
+        "frontend/src/components/HeroSection.tsx",
+        "frontend-file-summaries.txt"
+      ]
+    }
+  ],
+  "hallucinated_features": [],
+  "confidence": 0.6,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/components/HeroSection.tsx",
+    "project_state.json"
+  ]
+}
